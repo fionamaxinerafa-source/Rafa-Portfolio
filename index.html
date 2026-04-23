@@ -27,3 +27,107 @@
   <section class="bg2"></section>
 </body>
 </html>
+
+  <!-- ROBOTO MONO -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto Mono', monospace;
+      color: white;
+    }
+
+    /* NAVBAR */
+    .nav {
+      position: fixed;
+      right: 303px;
+      top: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    /* HIDE ON SCROLL DOWN */
+    .nav.hide {
+      transform: translateY(-200%);
+    }
+
+    /* YEAR TEXT */
+    .year {
+      position: absolute;
+      right: -210px;
+      top: 15px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* MENU */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    /* LINKS */
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    /* CUSTOM SQUARE */
+    .square {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      display: inline-block;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="nav" id="navbar">
+    <div class="year">[2026]</div>
+
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PROJECTS</a></li>
+      <li><a href="#">OFF THE CLOCK</a></li>
+      <li><a href="#">INFO</a></li>
+    </ul>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    let lastScroll = 0;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      let currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        navbar.classList.add("hide");
+      } else {
+        navbar.classList.remove("hide");
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+</body>
+</html>
