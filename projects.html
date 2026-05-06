@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects – Rafa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <div class="nav-logo-left"><img id="navImage" src=""></div>
+  <div class="nav-logo-left2"><img id="navImage2" src=""></div>
+  <div class="nav-logo-left3"><img id="navImage3" src="logo(blue)s7.png"></div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="offtheclock.html">OFF THE CLOCK</a></li>
+      <li><a href="info.html">INFO</a></li>
+    </ul>
+  </div>
+  <div class="nav-year">
+    <p class="mono">[2026]</p>
+  </div>
+
+  
+  <section class="projects-s1">
+    <div class="projects-title fade">
+      <h1 class="bebas-xl projects-heading">PROJECTS</h1>
+    </div>
+  </section>
+
+  
+  <div class="projects-s2-wrapper" id="s2Wrapper">
+    <div class="projects-s2" id="projects-s2">
+      <p class="mono projects-subtitle">[PROJECTS I'VE WORKED ON THROUGHOUT MY JOURNEY]</p>
+      <div class="projects-carousel-wrap">
+        <div class="projects-carousel" id="projectsCarousel">
+          <div class="carousel-item" onclick="openProject('proj1')" style="cursor:pointer;">
+            <img src="project 1.jpg" alt="Project 1">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="openProject('proj2')" style="cursor:pointer;">
+            <img src="project 2.jpg" alt="Project 2">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="openProject('proj3')" style="cursor:pointer;">
+            <img src="project 3.jpg" alt="Project 3">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="openProject('proj4')" style="cursor:pointer;">
+            <img src="project 4.jpg" alt="Project 4">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="openProject('proj5')" style="cursor:pointer;">
+            <img src="project 5.jpg" alt="Project 5">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+          <div class="carousel-item" onclick="openProject('proj6')" style="cursor:pointer;">
+            <img src="project 6.jpg" alt="Project 6">
+            <div class="carousel-meta">
+              <span class="mono carousel-label-left">LOREM IPSUM</span>
+              <span class="mono carousel-label-right">LOREM IPSUM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="proj-overlay" id="proj1">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 1.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <div class="proj-overlay" id="proj2">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 2.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <div class="proj-overlay" id="proj3">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 3.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <div class="proj-overlay" id="proj4">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 4.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <div class="proj-overlay" id="proj5">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 5.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <div class="proj-overlay" id="proj6">
+    <section class="proj-s1" style="background-image:url('proj-s1.jpg')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <h1 class="bebas proj-title">LOREM IPSUM</h1>
+    </section>
+    <section class="proj-s2" style="background-image:url('proj-s2.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <img src="project 6.jpg" class="proj-img">
+    </section>
+    <section class="proj-s3" style="background-image:url('proj-s3.png')">
+      <button class="proj-close mono" onclick="closeProject()">CLOSE THIS PROJECT</button>
+      <div class="proj-s3-topleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-desc">
+        <h2 class="bebas proj-desc-heading">LOREM IPSUM DOLOR SIT AMET,<br>CONSECTETUR ADIPISCING ELIT,<br>SED DO EIUSMOD TEMPOR<br>INCIDIDUNT UT LABORE ET<br>DOLORE MAGNA ALIQUA.</h2>
+        <p class="mono proj-desc-body">Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt ut labore<br>et dolore magna aliqua.</p>
+      </div>
+      <div class="proj-bottomleft mono">[COLLECTION OF WORK]</div>
+      <div class="proj-bottomright mono">[COPYRIGHT 2026]</div>
+    </section>
+  </div>
+
+  <script>
+    
+    function openProject(id) {
+      const overlay = document.getElementById(id);
+      overlay.classList.add('proj-overlay-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProject() {
+      document.querySelectorAll('.proj-overlay').forEach(el => el.classList.remove('proj-overlay-open'));
+      document.body.style.overflow = '';
+    }
+
+    
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
+    });
+
+    
+    document.querySelector('.nav-logo-left3 img').style.display = 'block';
+    document.querySelector('.nav').classList.add('nav-blue');
+    document.querySelector('.nav-year').classList.add('nav-blue');
+
+    const nav         = document.querySelector('.nav');
+    const navYear     = document.querySelector('.nav-year');
+    const navLogoLeft  = document.querySelector('.nav-logo-left');
+    const navLogoLeft2 = document.querySelector('.nav-logo-left2');
+    const navLogoLeft3 = document.querySelector('.nav-logo-left3');
+    let lastScroll = 0;
+
+    
+    const wrapper    = document.getElementById('s2Wrapper');
+    const s2el       = document.getElementById('projects-s2');
+    const carouselEl = document.getElementById('projectsCarousel');
+
+    function updateCarousel() {
+      const wRect      = wrapper.getBoundingClientRect();
+      const wHeight    = wrapper.offsetHeight - window.innerHeight;
+      const progress   = Math.max(0, Math.min(1, -wRect.top / wHeight));
+      const maxScroll  = carouselEl.scrollWidth - carouselEl.clientWidth;
+      carouselEl.scrollLeft = progress * maxScroll;
+
+      // Pin the section while in view
+      if (wRect.top <= 0 && wRect.bottom >= window.innerHeight) {
+        s2el.style.position = 'fixed';
+        s2el.style.top = '0';
+        s2el.style.left = '0';
+        s2el.style.width = '100%';
+      } else {
+        s2el.style.position = 'absolute';
+        s2el.style.top = wRect.top <= 0 ? 'auto' : '0';
+        s2el.style.bottom = wRect.top <= 0 ? '0' : 'auto';
+        s2el.style.left = '0';
+        s2el.style.width = '100%';
+      }
+    }
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      // Nav hide/show
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        [nav, navYear, navLogoLeft, navLogoLeft2, navLogoLeft3].forEach(el => el.classList.add('nav-hidden'));
+      } else {
+        [nav, navYear, navLogoLeft, navLogoLeft2, navLogoLeft3].forEach(el => el.classList.remove('nav-hidden'));
+      }
+      lastScroll = currentScroll;
+
+      updateCarousel();
+    });
+
+    updateCarousel();
+
+    // Fade animation
+    const faders = document.querySelectorAll(".fade");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("show");
+      });
+    }, { threshold: 0.3 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
