@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Off The Clock – Rafa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ 
+  <div class="nav-logo-left"><img id="navImage" src=""></div>
+  <div class="nav-logo-left2"><img id="navImage2" src=""></div>
+  <div class="nav-logo-left3"><img id="navImage3" src=""></div>
+  <div class="nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="offtheclock.html">OFF THE CLOCK</a></li>
+      <li><a href="info.html">INFO</a></li>
+    </ul>
+  </div>
+  <div class="nav-year">
+    <p class="mono">[2026]</p>
+  </div>
+
+  
+  <section class="otc-s1">
+    <div class="otc-title fade">
+      <h1 class="bebas otc-heading">LIFE<br>OUTSIDE</h1>
+      <p class="mono otc-subtitle">Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="otc-polaroid fade">
+      <img src="otc-photo.png" alt="photo">
+      <p class="bebas otc-polaroid-text">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO CONSEQUAT.</p>
+    </div>
+    <div class="otc-scroll fade">
+      <p class="mono">[SCROLL DOWN]</p>
+    </div>
+  </section>
+
+ 
+  <div class="otc-s2-wrapper" id="otcS2Wrapper">
+  <section class="otc-s2" id="otcS2">
+    <h2 class="bebas otc-gallery-title fade">GALLERY</h2>
+    <div class="otc-gallery-wrap">
+      <div class="otc-gallery" id="otcGallery">
+        <div class="otc-gallery-row">
+          <img src="otc-g1.jpg">
+          <img src="otc-g2.jpg">
+          <img src="otc-g3.jpg">
+          <img src="otc-g4.jpg">
+          <img src="otc-g5.jpg">
+          <img src="otc-g6.jpg">
+          <img src="otc-g13.jpg">
+          <img src="otc-g14.jpg">
+        </div>
+        <div class="otc-gallery-row">
+          <img src="otc-g7.jpg">
+          <img src="otc-g8.jpg">
+          <img src="otc-g9.jpg">
+          <img src="otc-g10.jpg">
+          <img src="otc-g11.jpg">
+          <img src="otc-g12.jpg">
+          <img src="otc-g15.jpg">
+          <img src="otc-g16.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+ 
+  <section class="s8 otc-s3" style="background-image: url('otc-s3.png')">
+    <div class="s8-topleft fade">
+      <p class="mono">[FIONA MAXINE RAFA]</p>
+    </div>
+    <div class="s8-topright fade">
+      <p class="mono">[COPYRIGHT 2026]</p>
+    </div>
+    <div class="s8-title fade">
+      <h1 class="bebas s8-heading">COME</h1>
+      <h1 class="bebas s8-heading">SAY</h1>
+      <h1 class="bebas s8-heading">HELLO</h1>
+    </div>
+    <div class="s8-contact fade">
+      <p class="mono">[fionamaxinerafa@gmail.com]</p>
+      <p class="mono">[09977345258]</p>
+    </div>
+    <div class="s8-logo fade">
+      <img src="logo(brown)s8.png" alt="FIONA logo">
+    </div>
+    <div class="s8-bottomright fade">
+      <a href="https://www.instagram.com/fnmxrf/" target="_blank" class="mono" style="color:inherit; text-decoration:none;">[INSTAGRAM]</a>
+    </div>
+    <div class="s8-repeat-label fade">
+      <p class="mono">[CURRENTLY ON REPEAT]</p>
+    </div>
+    <div class="s8-player">
+      <div class="s8-vinyl-wrap" onclick="togglePlay()">
+        <img class="s8-album-art" src="album.png" alt="album art">
+        <div class="s8-vinyl"></div>
+        <div class="s8-play-overlay">
+          <svg id="iconPlay" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="iconPause" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </div>
+      </div>
+      <audio id="audioPlayer" src="song.mp3"></audio>
+    </div>
+    <div class="s8-songtitle-label fade">
+      <p class="mono">[harry styles - music for a sushi restaurant]</p>
+    </div>
+  </section>
+
+  <script>
+    
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
+    });
+
+    
+    const audio     = document.getElementById('audioPlayer');
+    const iconPlay  = document.getElementById('iconPlay');
+    const iconPause = document.getElementById('iconPause');
+    const vinyl     = document.querySelector('.s8-vinyl');
+
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+        iconPlay.style.display  = 'none';
+        iconPause.style.display = 'block';
+        vinyl.classList.add('playing');
+      } else {
+        audio.pause();
+        iconPlay.style.display  = 'block';
+        iconPause.style.display = 'none';
+        vinyl.classList.remove('playing');
+      }
+    }
+
+    audio.addEventListener('ended', () => {
+      iconPlay.style.display  = 'block';
+      iconPause.style.display = 'none';
+      vinyl.classList.remove('playing');
+    });
+
+    
+    const otcWrapper = document.getElementById('otcS2Wrapper');
+    const otcS2el    = document.getElementById('otcS2');
+    const otcGallery = document.getElementById('otcGallery');
+
+    function updateGallery() {
+      const wRect   = otcWrapper.getBoundingClientRect();
+      const wHeight = otcWrapper.offsetHeight - window.innerHeight;
+      const progress = Math.max(0, Math.min(1, -wRect.top / wHeight));
+      const maxScroll = otcGallery.scrollWidth - otcGallery.clientWidth;
+      otcGallery.scrollLeft = progress * maxScroll;
+
+      if (wRect.top <= 0 && wRect.bottom >= window.innerHeight) {
+        otcS2el.style.position = 'fixed';
+        otcS2el.style.top = '0';
+        otcS2el.style.left = '0';
+        otcS2el.style.width = '100%';
+      } else {
+        otcS2el.style.position = 'absolute';
+        otcS2el.style.top = wRect.top <= 0 ? 'auto' : '0';
+        otcS2el.style.bottom = wRect.top <= 0 ? '0' : 'auto';
+        otcS2el.style.left = '0';
+        otcS2el.style.width = '100%';
+      }
+    }
+
+    window.addEventListener('scroll', updateGallery);
+    updateGallery();
+
+    
+    const nav          = document.querySelector('.nav');
+    const navYear      = document.querySelector('.nav-year');
+    const navLogoLeft  = document.querySelector('.nav-logo-left');
+    const navLogoLeft2 = document.querySelector('.nav-logo-left2');
+    const navLogoLeft3 = document.querySelector('.nav-logo-left3');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      const index = Math.round(currentScroll / window.innerHeight);
+
+      
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        [nav, navYear, navLogoLeft, navLogoLeft2, navLogoLeft3].forEach(el => el.classList.add('nav-hidden'));
+      } else {
+        [nav, navYear, navLogoLeft, navLogoLeft2, navLogoLeft3].forEach(el => el.classList.remove('nav-hidden'));
+      }
+      lastScroll = currentScroll;
+
+      
+      if (index === 0) {
+        // s1 — brown logo, dark text
+        navImage.src = 'logo(brown)s2.png';
+        navImage.style.display = 'block';
+        navImage2.style.display = 'none';
+        navImage3.style.display = 'none';
+        nav.classList.add('nav-dark');
+        nav.classList.remove('nav-yellow', 'nav-blue');
+        navYear.classList.add('nav-dark');
+        navYear.classList.remove('nav-yellow', 'nav-blue');
+        navYear.style.visibility = 'visible';
+      } else if (index === 1) {
+        // s2 gallery — brown logo, dark text
+        navImage.src = 'logo(brown)s2.png';
+        navImage.style.display = 'block';
+        navImage2.style.display = 'none';
+        navImage3.style.display = 'none';
+        nav.classList.add('nav-dark');
+        nav.classList.remove('nav-yellow', 'nav-blue');
+        navYear.classList.add('nav-dark');
+        navYear.classList.remove('nav-yellow', 'nav-blue');
+        navYear.style.visibility = 'visible';
+      } else if (index === 2) {
+        // s3 come say hello — dark text, no logo, no year
+        navImage.style.display = 'none';
+        navImage2.style.display = 'none';
+        navImage3.style.display = 'none';
+        nav.classList.add('nav-dark');
+        nav.classList.remove('nav-yellow', 'nav-blue');
+        navYear.classList.add('nav-dark');
+        navYear.style.visibility = 'hidden';
+      }
+    });
+
+    const navImage  = document.getElementById('navImage');
+    const navImage2 = document.getElementById('navImage2');
+    const navImage3 = document.getElementById('navImage3');
+
+    
+    navImage.src = 'logo(brown)s2.png';
+    navImage.style.display = 'block';
+    nav.classList.add('nav-dark');
+    navYear.classList.add('nav-dark');
+
+    
+    const faders = document.querySelectorAll('.fade');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.3 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
