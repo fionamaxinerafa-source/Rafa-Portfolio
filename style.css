@@ -29,7 +29,7 @@ section {
   width: clamp(200px, 40vw, 500px);
 }
 .s1 {
-  background: url('bg-1.png') no-repeat;
+  background: url('images/bg-1.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
   display: flex;
@@ -48,31 +48,31 @@ section {
 }
 
 .s2 {
-  background: url('bg-2.png') no-repeat;
+  background: url('images/bg-2.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
 .s3 {
-  background: url('bg-3.png') no-repeat;
+  background: url('images/bg-3.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
 .s4 {
-  background: url('bg-4.png') no-repeat;
+  background: url('images/bg-4.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
 .s5 {
-  background: url('bg-5.png') no-repeat;
+  background: url('images/bg-5.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
 .s6 {
-  background: url('bg-6.png') no-repeat;
+  background: url('images/bg-6.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
   display: flex;
@@ -81,13 +81,13 @@ section {
 }
 
 .s7 {
-  background: url('bg-7.png') no-repeat;
+  background: url('images/bg-7.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
 
 .s8 {
-  background: url('bg-8.png') no-repeat;
+  background: url('images/bg-8.png') no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }
@@ -109,7 +109,7 @@ section {
   font-size: 16px;
 }
 
-/* ===== TEXT BLOCK ===== */
+
 .text-block {
   position: absolute;
   max-width: 600px;
@@ -470,7 +470,7 @@ section {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: url('vinyl.png') no-repeat center / cover;
+  background: url('images/vinyl.png') no-repeat center / cover;
   z-index: 1;
   transition: right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: vinylSpin 3s linear infinite paused;
@@ -639,7 +639,7 @@ a {
 }
 
 .info-s4 {
-  background: url('info-s4.png') no-repeat center / cover;
+  background: url('images/info-s4.png') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -695,15 +695,15 @@ a {
 }
 
 .info-s5 {
-  background: url('info-s5.png') no-repeat center / cover !important;
+  background: url('images/info-s5.png') no-repeat center / cover !important;
 }
 
 .info-s3 {
-  background: url('info-s3.png') no-repeat center / cover !important;
+  background: url('images/info-s3.png') no-repeat center / cover !important;
 }
 
 .projects-s1 {
-  background: url('projects-bg.jpg') no-repeat center / cover;
+  background: url('images/projects-bg.jpg') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -724,7 +724,7 @@ a {
 }
 
 .projects-s2 {
-  background: url('projects-s2-bg.jpg') no-repeat center / cover;
+  background: url('images/projects-s2-bg.jpg') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   position: sticky;
@@ -824,7 +824,7 @@ a {
 }
 
 .projects-s2 {
-  background: url('projects-s2-bg.jpg') no-repeat center / cover;
+  background: url('images/projects-s2-bg.jpg') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -959,14 +959,14 @@ a {
 }
 
 .otc-s1 {
-  background: url('otc-s1.png') no-repeat center / cover;
+  background: url('images/otc-s1.png') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   position: relative;
 }
 
 .otc-s2 {
-  background: url('otc-s2.png') no-repeat center / cover;
+  background: url('images/otc-s2.png') no-repeat center / cover;
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -985,7 +985,7 @@ a {
 }
 
 .otc-s3 {
-  background: url('otc-s3.png') no-repeat center / cover;
+  background: url('images/otc-s3.png') no-repeat center / cover;
 }
 
 /* Section 1 */
